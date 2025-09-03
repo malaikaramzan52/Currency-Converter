@@ -17,41 +17,33 @@
     <!-- <h1>Allah</h1> -->
     <div class="bg-[#fff] p-2 rounded h-[65vh] w-[50vh] ">
         <h2 class="font-serif font-bold text-2xl">Currency Converter</h2>
-        <form class="mt-2 mb-1 p-2 rounded">Enter amount
-            <input value="100" type="text"
-                class=" w-[100%] outline-none border  border-gray-400 rounded h-[3rem] pl-2" />
+        <form class="mt-2 mb-1 p-2 rounded">
+            <div class="amount">
+            <p>Enter amount</p>
+            <input value="100" type="text" class=" w-[100%] outline-none border  border-gray-400 rounded h-[3rem] pl-2" />
+            </div>
+            
             <div id="dropdown" class="flex  justify-between mt-[2rem]">
-                <div id="from">
+                <div class="from">
                     <p>From</p>
                     <div id="select container"
                         class="flex  w-[100%] rounded justify-center items-center border border-gray-400">
                         <img src="https://flagsapi.com/US/flat/64.png" class="w-6">
-                        <select name="From" class=" outline-none rounded bg-[#fff] font-[1rem] w-auto">
-                            <option value="USD">USD</option>
-                            <option value="INR">INR</option>
-                            <option value="PKR">PKR</option>
-                            <option value="EUR">EUR</option>
-                            <option value="AUD">AUD</option>
+                        <select class ="Selects" name="from" class=" outline-none rounded bg-[#fff] font-[1rem] w-auto">
                         </select>
                     </div>
                 </div>
                 <i class="fa-solid fa-right-left font-[1.5rem] mt-[2rem]"></i>
-                <div id="to">
+                <div class="to">
                     <p>To</p>
                     <div class="flex w-[100%] rounded justify-center items-center border border-gray-400">
                         <img src="https://flagsapi.com/PK/flat/64.png" class="w-6">
-                        <select name="to" class="outline-none rounded bg-[#fff] w-auto font-[1rem]">
-                            <option value="USD">USD</option>
-                            <option value="INR">INR</option>
-                            <option value="PKR">PKR</option>
-                            <option value="EUR">EUR</option>
-                            <option value="AUD">AUD</option>
-                        </select>
+                        <select class="Selects" name="to" class="outline-none rounded bg-[#fff] w-auto font-[1rem]"></select>
                     </div>
                 </div>
             </div>
             <div id="msg" class="mt-[2rem]  mb-[2rem]">1USD = 283 PKR </div>
-            <button
+            <button id="btn"
                 class="border w-[100%] rounded-xl  h-[3rem] bg-[#af4d98] text-white font-[1.15rem] cursor-pointer">Get
                 Exchange Rate</button>
         </form>
