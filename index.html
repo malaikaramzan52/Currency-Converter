@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
     <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <h1>Allah</h1>
+
+<body class="flex justify-center items-center h-[100vh] bg-[#f4e4ba]">
+
+    <!-- <h1>Allah</h1> -->
+    <div class="bg-[#fff] p-2 rounded h-[65vh] w-[50vh] ">
+        <h2 class="font-serif font-bold text-2xl">Currency Converter</h2>
+        <form class="mt-2 mb-1 p-2 rounded">Enter amount
+            <input value="100" type="text"
+                class=" w-[100%] outline-none border  border-gray-400 rounded h-[3rem] pl-2" />
+            <div id="dropdown" class="flex  justify-between mt-[2rem]">
+                <div id="from">
+                    <p>From</p>
+                    <div id="select container"
+                        class="flex  w-[100%] rounded justify-center items-center border border-gray-400">
+                        <img src="https://flagsapi.com/US/flat/64.png" class="w-6">
+                        <select name="From" class=" outline-none rounded bg-[#fff] font-[1rem] w-auto">
+                            <option value="USD">USD</option>
+                            <option value="INR">INR</option>
+                            <option value="PKR">PKR</option>
+                            <option value="EUR">EUR</option>
+                            <option value="AUD">AUD</option>
+                        </select>
+                    </div>
+                </div>
+                <i class="fa-solid fa-right-left font-[1.5rem] mt-[2rem]"></i>
+                <div id="to">
+                    <p>To</p>
+                    <div class="flex w-[100%] rounded justify-center items-center border border-gray-400">
+                        <img src="https://flagsapi.com/PK/flat/64.png" class="w-6">
+                        <select name="to" class="outline-none rounded bg-[#fff] w-auto font-[1rem]">
+                            <option value="USD">USD</option>
+                            <option value="INR">INR</option>
+                            <option value="PKR">PKR</option>
+                            <option value="EUR">EUR</option>
+                            <option value="AUD">AUD</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="msg" class="mt-[2rem]  mb-[2rem]">1USD = 283 PKR </div>
+            <button
+                class="border w-[100%] rounded-xl  h-[3rem] bg-[#af4d98] text-white font-[1.15rem] cursor-pointer">Get
+                Exchange Rate</button>
+        </form>
+    </div>
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
