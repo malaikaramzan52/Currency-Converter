@@ -16,7 +16,7 @@ The **Currency Converter Web Application** is a responsive and interactive front
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 * **HTML** – Application structure
 * **CSS** – Styling and responsive layout
